@@ -1,8 +1,22 @@
-function myFunction() {
-    var userAge = document.getElementById("id1");
-    if (!userAge.checkValidity()) {
-      document.getElementById("val").innerHTML = userAge.validationMessage;
-    } else {
-      document.getElementById("val").innerHTML = "You are of age to enjoy this game!";
-    } 
-  } 
+const fname = document.getElementById("fname");
+const lname = document.getElementById("lname");
+
+const form = document.getElementById("form");
+const errorElement = document.getElementById("error");
+
+form.addEventListener("submit", (e) => {
+
+    let messages = []; 
+    if (fname.value === "" || name.value == null){
+        messages.push("Error: First name is required");
+    }
+
+    if(messages.length > 0){
+
+    e.preventDefault();
+    errorElement.innerText = messages.join(", ");
+
+    }
+})
+
+

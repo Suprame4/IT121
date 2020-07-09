@@ -4,21 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+
 </head>
 <body>
-    <p>This game is for mature Audiences. <br>
-        Enter your age and click OK:</p>
+    <script defer src="index.js"></script>
+    <div id="error"></div>
+    <form id="form" action="results.html" method="GET">
+        <div>
+        <div>
+            <h1 id="title">Age Verification Needed</h1>
+        </div>
+        <div class="container">
+
+        <p>This game is for mature audiences. <br>
+        Please enter your information below for validation</p>
+
+        <div> 
+            <label name="fname">First Name * </label>
+            <input type="text" id="fname" name="fname" placeholder="name"> 
+        </div>
+
+        <div>
+            <label name="lname">Last Name * </label required>
+            <input type="text" id="lname" name="lname" placeholder="name"> 
+        </div>
+
+        <div>
+            <label name="age">Age * </label required>
+                <input type="number" id="age" name="age" min="18" max="100"> 
+        </div>
         
-        <input id="id1" type="number" min="18" max="130" required>
-        <button onclick="myFunction()">OK</button>
+        <div>
+            <label name="email">Email * </label required>
+                <input type="text" id="email" name="email"> 
+        </div>
+        <div>
+            <label name="Password">Password * </label required>
+                <input type="password" id="password" name="password"> 
+        </div>
+        <div>
+            <label name="Password">Confirm Password * </label required>
+                <input type="text" id="password" name="password"> 
+        </div>
         
+            
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
         <p>Users the age of 18 and under aren't permitted to play this game without the consent of an adult.</p>
-        
+
         <p id="val"></p>
-        
-        <script src="index.js">
-        
-        </script>
-        
+        </div>
+
+        </div>
+        <p> This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply lol.</p>
+    <form>    
 </body>
 </html>

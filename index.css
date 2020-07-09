@@ -1,0 +1,25 @@
+
+    .container {
+        background-color: #a470e9;
+        margin: auto;
+        border: 10px #000 solid;
+        width: 80%;
+        height: auto;
+        text-align: center;
+    
+        }
+        body {
+        background-image: url(theresaPic.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        font-size: 120%; 
+        }
+        #title {
+        color:white;
+        font-family: "Black Han Sans", san-serif;
+        text-align: center;
+        font-size: 100px;
+        text-shadow: 2px 0 0 rgb(5, 38, 27), -2px 0 0 rgb(5, 38, 27), 0 2px 0 rgb(5, 38, 27), 0 -2px 0 rgb(5, 38, 27),
+            1px 1px rgb(5, 38, 27), -1px -1px 0 rgb(5, 38, 27), 1px -1px 0 rgb(5, 38, 27), -1px 1px 0 rgb(5, 38, 27);
+        }
