@@ -21,34 +21,39 @@
         Please enter your information below for validation</p>
 
         <div> 
-            <label name="fname">First Name * </label>
+            <label for="fname">First Name * </label>
             <input type="text" id="fname" name="fname" placeholder="name"> 
         </div>
 
         <div>
-            <label name="lname">Last Name * </label required>
+            <label for="lname">Last Name * </label required>
             <input type="text" id="lname" name="lname" placeholder="name"> 
         </div>
 
         <div>
-            <label name="age">Age * </label required>
+            <label for="age">Age * </label required>
                 <input type="number" id="age" name="age" min="18" max="100"> 
         </div>
         
         <div>
-            <label name="email">Email * </label required>
+            <label for="email">Email * </label required>
                 <input type="text" id="email" name="email"> 
         </div>
         <div>
-            <label name="Password">Password * </label required>
+            <label for="password">Password * </label required>
                 <input type="password" id="password" name="password"> 
         </div>
+       <!-- <ul> 
+            <li font>Password must be longer than 6 characters</li>
+            <li>Password must be shorter than 20 characters</li>
+            <li>Password....</li>
+        </ul> -->
         <div>
-            <label name="Password">Confirm Password * </label required>
-                <input type="text" id="password" name="password"> 
+            <label for="password1">Confirm Password * </label required>
+                <input type="password" id="password1" name="password1"> 
         </div>
         
-            
+   
             <input type="submit" value="Submit">
             <input type="reset" value="Reset">
         <p>Users the age of 18 and under aren't permitted to play this game without the consent of an adult.</p>
@@ -61,3 +66,17 @@
     <form>    
 </body>
 </html>
+
+<!-- <div id="error"></div>
+<form id="form" action="/" method="GET">
+  <div>
+    <label for="name">Name</label>
+    <input id="name" name="name" type="text" required>
+  </div>
+  <div>
+    <label for="password">Password</label>
+    <input id="password" name="password" type="password">
+  </div>
+  <button type="submit">Submit</button>
+</form>
+--> 
