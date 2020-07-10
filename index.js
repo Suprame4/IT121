@@ -13,6 +13,10 @@ form.addEventListener("submit", (e) => {
         messages.push("ERROR: First name is required");
     }
 
+    if (lname.value === "" || lname.value == null){
+        messages.push("ERROR: Last name is required");
+    }
+
     if (password.value.length <= 6){
         messages.push("ERROR: Password must be longer than 6 characters")
     }
