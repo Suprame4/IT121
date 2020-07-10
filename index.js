@@ -17,6 +17,14 @@ form.addEventListener("submit", (e) => {
         messages.push("ERROR: Last name is required");
     }
 
+    if (email.value === "" || email.value == null){
+        messages.push("ERROR: Email is required");
+    }
+
+    if (password.value === "" || password.value == null){
+        messages.push("ERROR: Password is required");
+    }
+
     if (password.value.length <= 6){
         messages.push("ERROR: Password must be longer than 6 characters")
     }
@@ -31,7 +39,7 @@ form.addEventListener("submit", (e) => {
     }
       
     if (password.value !== password1.value){
-        messages.push("ERROR: Password does not match")
+        messages.push("ERROR: Passwords do not match")
     }
 
     
