@@ -9,7 +9,6 @@
 </head>
 <body>
     <script defer src="index.js"></script>
-    <div id="error"></div>
     <form id="form" action="results.html" method="GET">
         <div>
         <div>
@@ -53,21 +52,24 @@
                 <input type="password" id="password1" name="password1"> 
         </div>
         
-   
-            <input type="submit" value="Submit">
+
+            <form id="form" action="results.html" method="GET"><input type="submit" value="Submit"></form>
             <input type="reset" value="Reset">
+        
+            <div id="error" class="errors"></div>
+
         <p>Users the age of 18 and under aren't permitted to play this game without the consent of an adult.</p>
 
         <p id="val"></p>
         </div>
 
         </div>
-        <p> This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply lol.</p>
+        <p class="protect" > This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply lol.</p>
     <form>    
 </body>
 </html>
 
-<!-- <div id="error"></div>
+<!-- 
 <form id="form" action="/" method="GET">
   <div>
     <label for="name">Name</label>
