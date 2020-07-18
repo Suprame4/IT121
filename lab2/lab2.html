@@ -3,18 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lab2.css">
+
     <title>IT 121: Lab 2</title>
 </head>
 
 <body>
-    <button id="userInput" onclick="userInputFxn()">First</button>
-    <button id="calcFxn" onclick="calculationFxn()">Second</button>
+    <div class="container-1">
+        <div class="flex-box-container-1">
+            <div>
+                <button class= "btn btn-primary" id="userInput" onclick="userInputFxn()">First</button>
+            </div>
+            
+            <div>
+                <button class= "btn btn-primary" id="calcFxn" onclick="calculationFxn()">Second</button>
+            </div>
+
+        </div>
+    </div>
+
+
     
     <p id="demo"></p>
     <p id="demo1"></p>
     <p id="demo2"></p>
 
-    <script src="index.js">
+    <script src="lab2.js">
 
     </script>
 </body>
