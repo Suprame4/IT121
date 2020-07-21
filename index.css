@@ -22,7 +22,7 @@
         font-size: 100px;
         text-shadow: 2px 0 0 rgb(5, 38, 27), -2px 0 0 rgb(5, 38, 27), 0 2px 0 rgb(5, 38, 27), 0 -2px 0 rgb(5, 38, 27),
             1px 1px rgb(5, 38, 27), -1px -1px 0 rgb(5, 38, 27), 1px -1px 0 rgb(5, 38, 27), -1px 1px 0 rgb(5, 38, 27);
-        }
+        } 
         .errors {
             text-align: center;
             color: crimson;
