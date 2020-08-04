@@ -9,7 +9,6 @@ document.getElementById("stylePara").addEventListener("click", styleParaFxn);
 document.getElementById("removeEventListenerBtm").disabled = true; 
 
 
-
 function eventHandlerFxn(){
     document.getElementById("demo").innerHTML = Date(); 
 
@@ -32,6 +31,10 @@ function addEntLtnFxn2(){
     console.log("Btm4: Click event registered"); 
 }
 
+function removeHandler() {
+    var myobj = document.getElementById("demo");
+    myobj.remove();
+}
 
 function removeEventListenerFxn(){
 
@@ -56,17 +59,17 @@ function styleParaFxn(){
             var myCollection = document.getElementsByTagName("p");
             var i; 
                 for (i = 0; i < myCollection.length; i++){
-                    myCollection[i].style.color = "red"; 
+                    myCollection[i].style.color = "white"; 
             }
             break;
 
-        }else if (userInput == 2){
+        } if (userInput == 2){
             //node list 
             var myNodeList = document.querySelectorAll("p");
-            var i;
+            var c;
             //change color is not working for this section
-            for (i < 0; i < myNodeList.length; i++){
-                myNodeList[i].style.color = "blue"; 
+            for (c < 0; c < myNodeList.length; c++){
+                myNodeList[c].style.color = "red"; 
             }
             
             break;

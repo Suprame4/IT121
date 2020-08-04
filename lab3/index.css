@@ -1,0 +1,13 @@
+body{
+    text-align: center;
+    background-color: aquamarine;
+    padding: 10%;
+}
+
+.buttons {
+    background-color: white;
+}
+.function {
+    background-color: white;
+    height: auto;
+}
