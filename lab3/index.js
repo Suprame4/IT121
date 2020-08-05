@@ -7,6 +7,9 @@ document.getElementById("stylePara").addEventListener("click", styleParaFxn);
 
 //Disable the disable event button 
 document.getElementById("removeEventListenerBtm").disabled = true; 
+//document.getElementById("nonBtnGC1").disabled = true;
+//document.getElementById("nonBtnGC2").disabled = true; 
+
 
 
 function eventHandlerFxn(){
@@ -14,40 +17,46 @@ function eventHandlerFxn(){
 
     //Add event listeners for the two button GUI controls
     //the first button
-    document.getElementById("nonBtmGC1").addEventListener("click", addEntLtnFxn);
+    document.getElementById("nonBtnGC1").addEventListener("click", addEntLtnFxn);
 
     //the second button 
-    document.getElementById("nonBtmGC2").addEventListener("click", addEntLtnFxn2);
+    document.getElementById("nonBtnGC2").addEventListener("click", addEntLtnFxn2);
 
     document.getElementById("addEventListenerBtm").disabled = true;
     document.getElementById("removeEventListenerBtm").disabled = false; 
+    document.getElementById("nonBtnGC1").disabled = false;
+    document.getElementById("nonBtnGC2").disabled = false; 
 };
 
 function addEntLtnFxn(){
-    console.log("Btm3: Click event registered");
+    console.log("Btn3: Click event registered");
 }
 
 function addEntLtnFxn2(){
-    console.log("Btm4: Click event registered"); 
+    console.log("Btn4: Click event registered");
+
+    
 }
 
-function removeHandler() {
+/*function removeHandler() {
     var myobj = document.getElementById("demo");
     myobj.remove();
-}
+}*/ 
 
 function removeEventListenerFxn(){
 
-    document.getElementById("nonBtmGC1").removeEventListener("click", addEntLtnFxn);
-    document.getElementById("nonBtmGC2").removeEventListener("click", addEntLtnFxn2);
+    document.getElementById("nonBtnGC1").removeEventListener("click", addEntLtnFxn);
+    document.getElementById("nonBtnGC2").removeEventListener("click", addEntLtnFxn2);
 
     document.getElementById("addEventListenerBtm").disabled = false;
     document.getElementById("removeEventListenerBtm").disabled = true; 
+    document.getElementById("nonBtnGC1").disabled = true;
+    document.getElementById("nonBtnGC2").disabled = true; 
 };
 
 function styleParaFxn(){
 
-    //Creating a while with conditional statements to evaluate user input 
+    //Creating a while loop with conditional statements to evaluate user input 
     while(true){
 
         var userInput = window.prompt("Enter 1 for Traverse bt DOM collection or 2 for by NodeList");
@@ -57,25 +66,27 @@ function styleParaFxn(){
         if( userInput == 1 ){
             //DOM collection
             var myCollection = document.getElementsByTagName("p");
-            var i; 
-                for (i = 0; i < myCollection.length; i++){
-                    myCollection[i].style.color = "white"; 
+            var i = 0 ; 
+                while ( i < myCollection.length){
+                    myCollection[i].style.color = "red"; 
+                    i++;
             }
             break;
 
-        } if (userInput == 2){
+        }else if (userInput == 2){
             //node list 
             var myNodeList = document.querySelectorAll("p");
-            var c;
+            var i = 0;
             //change color is not working for this section
-            for (c < 0; c < myNodeList.length; c++){
-                myNodeList[c].style.color = "red"; 
+            while (i < myNodeList.length){
+                myNodeList[i].style.color = "blue"; 
+                i++
             }
-            
             break;
+
         } else if (userInput == "" || userInput == null){
-            
             break; 
+
         }else {
             alert("Error: Try again!");
         }
