@@ -5,9 +5,21 @@ document.getElementById("removeEventListenerBtm").addEventListener("click", remo
 
 document.getElementById("stylePara").addEventListener("click", styleParaFxn); 
 
+document.getElementById("addDate").addEventListener("click", dateEventListen)
+
+document.getElementById("removeDate").addEventListener("click", removeDateListen);
 //Disable the disable event button 
 document.getElementById("removeEventListenerBtm").disabled = true; 
 
+
+function dateEventListen(){
+    document.getElementById("demo1").innerHTML = Date();
+
+}
+
+function removeDateListen() {
+    document.getElementById("addDate").removeEventListener("click", dateEventListen);
+}
 
 function eventHandlerFxn(){
     document.getElementById("demo").innerHTML = Date(); 
@@ -31,10 +43,7 @@ function addEntLtnFxn2(){
     console.log("Btm4: Click event registered"); 
 }
 
-function removeHandler() {
-    var myobj = document.getElementById("demo");
-    myobj.remove();
-}
+
 
 function removeEventListenerFxn(){
 
