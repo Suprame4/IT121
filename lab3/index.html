@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT 121: Lab 3</title>
+    <link rel="styelsheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -24,17 +25,24 @@
         <p>Click the "Surprise" button for a surprise.</p>
     
   
-    <div class= "function">
-        <div class="buttons">
+    <div class= "container-1">
+
+        <div class="flex-box-container-1">
            <div>
-            <button id="addEventListenerBtm">Btn1</button>
+            <button class="btn btn-primary" id="addEventListenerBtm">Btn1</button>
            </div> 
-            <button id="removeEventListenerBtm">Turn-OffBtn3</button>
-            <button id="nonBtnGC1">On</button>
-            <button id="nonBtnGC2">Off</button>
-        </div >
-            <button id="stylePara">Btn2</button>
-    </div>        
+            <button class="btn btn-primary" id="removeEventListenerBtm">Turn-OffBtn3</button>
+            <button class="btn btn-primary" id="stylePara">Btn2</button>
+        </div>
+    </div> 
+    <div>
+        <form>
+            <input type="radio" id="nonBtnGC1" name="status" value="on">
+            <label for="on">On</label><br>
+            <input type="radio" id="nonBtnGC2" name="status" value="off">
+            <label for="off">Off</label>
+        </form>
+    </div>       
     <p>You're Really Pushing My Buttons.</p>
 
 </div>

@@ -3,11 +3,12 @@ body{
     background-color: aquamarine;
     padding: 10%;
 }
-
-.buttons {
-    background-color: white;
+.flex-box-container-1 {
+    display: flex;
+    border: 1px solid black;
+    padding: 10px;
+    justify-content: space-around; 
 }
-.function {
-    background-color: white;
-    height: auto;
+.flex-box-container-1 div {
+    padding: 10px;
 }
